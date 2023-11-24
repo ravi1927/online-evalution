@@ -51,17 +51,19 @@ const Index = () =>{
 
   <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
-        <Grid item xs={8}>
-   <Document file={PDF} >
-      <Page pageNumber={1} className="pdf-container"/>
-    </Document>
+        <Grid item xs={7}>
+        <div style={{ width: '100%', height: '500px', overflow: 'auto' }}>
+        <Document file={PDF}>
+          <Page pageNumber={1} className="pdf-container" />
+        </Document>
+      </div>
         </Grid>
-        <Grid item xs={4}>
-        <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 120 }} aria-label="simple table">
+        <Grid item xs={5}>
+        <TableContainer component={Paper} style={{width: '100%', height: '500px', overflow: 'auto' }}>
+      <Table sx={{ minWidth: 120 }} aria-label="simple table" >
         <TableHead>
           <TableRow>
-            <TableCell>S.no</TableCell>
+            <TableCell>Q.No</TableCell>
             <TableCell>A</TableCell>
             <TableCell >B</TableCell>
             <TableCell>C</TableCell>
@@ -72,69 +74,69 @@ const Index = () =>{
         <TableBody>
           <TableRow>
           <TableCell>1.</TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          </TableRow>
-
-          <TableRow>
-          <TableCell>2.</TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
+          <TableCell><TextField size="small"  sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
           </TableRow>
 
           <TableRow>
           <TableCell>3.</TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          </TableRow>
+
+          <TableRow>
+          <TableCell>3.</TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
           </TableRow>
 
           <TableRow>
           <TableCell>4.</TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
           </TableRow>
 
 
 
           <TableRow>
           <TableCell>5.</TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
           </TableRow>
 
 
           <TableRow>
           <TableCell>6.</TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
           </TableRow>
 
           <TableRow>
           <TableCell>7.</TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
           </TableRow>
 
           <TableRow>
           <TableCell>8.</TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
-          <TableCell><TextField size="small" sx={{width:'2.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
+          <TableCell><TextField size="small" sx={{width:'3.5rem'}} /></TableCell>
           </TableRow>
 
         </TableBody>
