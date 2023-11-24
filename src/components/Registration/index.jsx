@@ -256,7 +256,8 @@ const Registration = () => {
                  
                   <Box pt={1}>
                     {" "}
-                    <label>Username</label>
+                    <label>Username*</label>
+                    
                   </Box>
                 </Box>
               </Grid>

@@ -1,5 +1,10 @@
 @media print {
     .pdf-container {
       display: none;
+      
     }
+  }
+
+  .pdf-container{
+    width: 10
   }
