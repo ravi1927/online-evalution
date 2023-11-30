@@ -60,18 +60,17 @@ const CustomTextField = styled(TextField)({
   },
 });
 
-const Forgotpassword = () => {
+const Fchangepassword = () => {
   const { t } = useTranslation();
   const [lang, setLang] = useState(false);
   
 
   const formik = useFormik({
     initialValues: {
-      username: "",
+      Otp:"",
     },
     validationSchema: Yup.object({
-      
-      username: Yup.string().required(`${t("Please Enter Username")}`),
+        Otp: Yup.string().required(`${t("Please Enter Otp")}`),
     }),
     onSubmit: (values, { setSubmitting }) => {
       setTimeout(() => {
@@ -90,7 +89,8 @@ const Forgotpassword = () => {
   }, []);
 
   const handleSubmit = () => {
-    navigate("/fotp");
+    //toast.success("Your password has been changed successfully")
+    navigate("/fchangepassword");
     //   if(formik.values.email && formik.values.password){
     //     sessionStorage.setItem('name',formik.values.email)
     //     setLoad(true)
@@ -169,7 +169,7 @@ const Forgotpassword = () => {
             fontSize={"1.1rem"}
             fontWeight={"bold"}
           >
-            Forgotpassword
+            Please Enter Otp 
           </Typography>
         </div>
         <form
@@ -177,31 +177,45 @@ const Forgotpassword = () => {
           onSubmit={formik.handleSubmit}
           style={{ width: "100%" }}
         >
-         
-          <LoginTextfield
+
+
+<LoginTextfield
             value={formik.values.email}
             fullWidth
             style={{ width: "100%" }}
-            name="username"
+            name="Otp"
             onChange={formik.handleChange}
             autoComplete="off"
-            error={formik.touched.username && formik.errors.username}
+            error={formik.touched.Otp && formik.errors.Otp}
             onBlur={formik.handleBlur}
             
             className={`${
-              formik.touched.username && formik.errors.username
+              formik.touched.Otp && formik.errors.Otp
                 ? "mb-1 w-100"
                 : "mb-4 w-100"
             }`}
-            placeholder="Email Address"
+            placeholder="Otp"
           />
-          {formik.touched.username && formik.errors.username && (
+          {formik.touched.Otp && formik.errors.Otp && (
             <FormHelperText className={`${classes.helperText} mb-1`}>
-              {formik.touched.username && formik.errors.username}
+              {formik.touched.Otp && formik.errors.Otp}
             </FormHelperText>
           )}
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
           
-          <Typography>OTP will send to your registered email address.Please check </Typography>
           
           <div
             style={{ fontSize: "14px" }}
@@ -218,4 +232,4 @@ const Forgotpassword = () => {
   );
 };
 
-export default Forgotpassword;
+export default Fchangepassword;

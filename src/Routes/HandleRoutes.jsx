@@ -13,6 +13,8 @@ const Forgotpasswod = lazy(() => import("../components/Forgotpassword"));
 const Managecourse = lazy(() => import("../components/Managecourse"));
 const Chnagepassword = lazy(() => import("../components/Changepassword"));
 const Testpdf = lazy(() => import("../components/Testing"));
+const Fchangepassword = lazy(() => import("../components/Fchangepassword"));
+const Fotp = lazy(() => import("../components/Fotp"));
 
 
 
@@ -23,6 +25,8 @@ const HandleRoutes = () => (
     <Route path="/registration" element={<Registration />} />
     <Route path="/otp" element={<Otp />} />
     <Route path="/forgotpassword" element={<Forgotpasswod />} />
+    <Route path="/fchangepassword" element={<Fchangepassword />} />
+    <Route path="/fotp" element={<Fotp />} />
     <Route path="/*" element={<NotFound />} />
     {/* Private Routes */}
     <Route element={<ProtectedRoutes />}>

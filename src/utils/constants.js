@@ -27,6 +27,15 @@ export const PATHS = {
     
   },
 
+  Fchangepassword: {
+    root: "/fchangepassword",
+    
+  },
+  Fotp: {
+    root: "/fotp",
+    
+  },
+
   Testing:{
     root: "/testing",
   },

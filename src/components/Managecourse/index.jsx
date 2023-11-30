@@ -14,6 +14,8 @@ import {
   import React from "react";
   import { useState, useEffect } from "react";
   import { useNavigate } from "react-router-dom";
+  import EditIcon from '@mui/icons-material/Edit';
+  import DeleteIcon from '@mui/icons-material/Delete';
   // import list from "../../../assets/list.svg";
   import axios from "axios";
   import { toast } from "react-toastify";
@@ -76,43 +78,43 @@ import {
             <TableBody>
               <TableRow >
                 <TableCell>Liyaqat sheikh</TableCell>
-                <TableCell>Edit</TableCell>
+                <TableCell><EditIcon /> | <DeleteIcon /></TableCell>
               </TableRow>
               <TableRow >
               <TableCell>Tabassumal umrah</TableCell>
-              <TableCell>Edit</TableCell>
+              <TableCell><EditIcon/>| <DeleteIcon /></TableCell>
               </TableRow>
               <TableRow >
                 <TableCell>Liyaqat sheikh</TableCell>
-                <TableCell>Edit</TableCell>
+                <TableCell><EditIcon/>| <DeleteIcon /></TableCell>
               </TableRow>
               <TableRow >
               <TableCell>Tabassumal umrah</TableCell>
-              <TableCell>Edit</TableCell>
+              <TableCell><EditIcon/>| <DeleteIcon /></TableCell>
               </TableRow>
               <TableRow >
                 <TableCell>Liyaqat sheikh</TableCell>
-                <TableCell>Edit</TableCell>
+                <TableCell><EditIcon/>| <DeleteIcon /></TableCell>
               </TableRow>
               <TableRow >
               <TableCell>Tabassumal umrah</TableCell>
-              <TableCell>Edit</TableCell>
+              <TableCell><EditIcon/>| <DeleteIcon /></TableCell>
               </TableRow>
               <TableRow >
                 <TableCell>Liyaqat sheikh</TableCell>
-                <TableCell>Edit</TableCell>
+                <TableCell><EditIcon/>| <DeleteIcon /></TableCell>
               </TableRow>
               <TableRow >
               <TableCell>Tabassumal umrah</TableCell>
-              <TableCell>Edit</TableCell>
+              <TableCell><EditIcon/>| <DeleteIcon /></TableCell>
               </TableRow>
               <TableRow >
                 <TableCell>Liyaqat sheikh</TableCell>
-                <TableCell>Edit</TableCell>
+                <TableCell><EditIcon/>| <DeleteIcon /></TableCell>
               </TableRow>
               <TableRow >
               <TableCell>Tabassumal umrah</TableCell>
-              <TableCell>Edit</TableCell>
+              <TableCell><EditIcon/>| <DeleteIcon /></TableCell>
               </TableRow>
             </TableBody>
           </Table>
